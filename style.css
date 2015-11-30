@@ -21,23 +21,21 @@ main {
 }
 
 
-/* Mobile view */
-
+/* Mobile view - 20em */
 @media (max-width: 319px) {  
  	#container {
     	background-color: #EEEEEE;
   	}
 }
 
-@media (min-width: 320) and (max-width: 639px) {  
+@media (min-width: 320px) and (max-width: 639px) {  
  	#container {
     	max-width: 320px;
     	background-image: url(img/mobile.png);
   	}
 }
 
-/* Tablet view */
-
+/* Tablet view 40em */
 @media (min-width: 640px) and (max-width: 1279px) {  
  	#container {
     	max-width: 640px;
@@ -45,8 +43,7 @@ main {
 	}
 }
 
-/* Desktop view */
-
+/* Desktop view  80em */
 @media (min-width: 1280px) {  
  	#container {
     	max-width: 1280px;
