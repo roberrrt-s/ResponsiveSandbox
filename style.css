@@ -20,14 +20,14 @@ main {
 	background-repeat: no-repeat;
 }
 
-
-/* Mobile view - 20em */
+/* < 20em view */
 @media (max-width: 319px) {  
  	#container {
     	background-color: #EEEEEE;
   	}
 }
 
+/* Mobile view - 20em */
 @media (min-width: 320px) and (max-width: 639px) {  
  	#container {
     	max-width: 320px;
