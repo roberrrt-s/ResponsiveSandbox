@@ -7,6 +7,7 @@
 body {
 	/* Default is white, change in the background color of your website if neccesary */
 	background-color: #FFFFFF;
+	margin: 0;
 }
 
 main {
@@ -21,6 +22,12 @@ main {
 
 
 /* Mobile view */
+
+@media (max-width: 359px) {  
+ 	#container {
+    	background-color: #EEEEEE;
+  	}
+}
 
 @media (min-width: 360px) and (max-width: 639px) {  
  	#container {
