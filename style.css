@@ -30,6 +30,7 @@ section {
 @media (max-width: 319px) {  
  	#small {
     	display: block;
+    	background-color: #EEE;
   	}
 }
 
