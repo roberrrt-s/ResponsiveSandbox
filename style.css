@@ -8,45 +8,48 @@ body {
 	/* Default is white, change in the background color of your website if neccesary */
 	background-color: #FFFFFF;
 	margin: 0;
+	height: auto;
+	overflow: auto;
 }
 
 main {
-	height: 100vh;
+	height: auto;
 }
 
-#container {
+section {
+	width: 100%;
 	margin: auto;
-	height: 100vh;
-	background-repeat: no-repeat;
+	text-align: center;
+}
+
+section {
+	display: none;
 }
 
 /* < 20em view */
 @media (max-width: 319px) {  
- 	#container {
-    	background-color: #EEEEEE;
+ 	#small {
+    	display: block;
   	}
 }
 
 /* Mobile view - 20em */
 @media (min-width: 320px) and (max-width: 639px) {  
- 	#container {
-    	max-width: 320px;
-    	background-image: url(img/mobile.png);
+ 	#mobile {
+    	display: block;
   	}
 }
 
 /* Tablet view 40em */
 @media (min-width: 640px) and (max-width: 1279px) {  
- 	#container {
-    	max-width: 640px;
-    	background-image: url(img/tablet.png);
+ 	#tablet {
+    	display: block;
 	}
 }
 
 /* Desktop view  80em */
 @media (min-width: 1280px) {  
- 	#container {
-    	max-width: 1280px;
-    	background-image: url(img/desktop.png);
+ 	#desktop {
+    	display: block;
 	}
 }
