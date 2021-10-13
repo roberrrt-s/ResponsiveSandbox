@@ -28,6 +28,7 @@ section {
 }
 
 img {
+	width: 100%;
 	max-width: 100%;
 }
 
@@ -50,7 +51,7 @@ img {
   	}
 
   	#mobile img {
-  		width: 320px;
+  		min-width: 320px;
   	}
 }
 
@@ -61,7 +62,7 @@ img {
 	}
 
   	#tablet img {
-  		width: 640px;
+  		min-width: 640px;
   	}
 }
 
@@ -72,6 +73,6 @@ img {
 	}
 
   	#desktop img {
-  		width: 1280px;
+  		min-width: 1280px;
   	}
 }
