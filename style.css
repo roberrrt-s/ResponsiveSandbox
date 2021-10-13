@@ -1,11 +1,12 @@
-/* Responsive Sandboxie stylesheet
- * Created by Robert Spier 
- */
+/*******************************
+Responsive Sandboxie stylesheet
+    Created by Robert Spier
+*******************************/
 
 /* Normal style */
 
 body {
-	/* Default is white, change in the background color of your website if neccesary */
+	/* Verander deze kleur als je een andere achtergrondkleur voor je pagina wilt */
 	background-color: #FFFFFF;
 	margin: 0;
 	height: auto;
