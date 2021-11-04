@@ -7,10 +7,10 @@ This repository was originally created for "Vormgeving 2" exercises, in which we
 
 De bestanden `mobile.html`, `tablet.html`, `desktop.html` en `responsive.html` laten zien wat er allemaal gebeurt zodra je verschillende schermgroottes gaat koppelen aan verschillende vlakverdelingen. Kijk hieronder eens op de volgende linkjes hoe de verschillende schermen invloed hebben op de layouts.
 
- - ![Mobile](https://roberrrt-s.github.io/ResponsiveSandboxie/mobile.html)
- - ![Tablet](https://roberrrt-s.github.io/ResponsiveSandboxie/tablet.html)
- - ![Desktop](https://roberrrt-s.github.io/ResponsiveSandboxie/desktop.html)
- - ![Responsive](https://roberrrt-s.github.io/ResponsiveSandboxie/responsive.html)
+ - [Mobile](https://roberrrt-s.github.io/ResponsiveSandboxie/mobile.html)
+ - [Tablet](https://roberrrt-s.github.io/ResponsiveSandboxie/tablet.html)
+ - [Desktop](https://roberrrt-s.github.io/ResponsiveSandboxie/desktop.html)
+ - [Responsive](https://roberrrt-s.github.io/ResponsiveSandboxie/responsive.html)
 
 ## Test je eigen ontwerp(en)!
 
