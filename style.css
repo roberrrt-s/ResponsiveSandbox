@@ -17,13 +17,13 @@ main {
 	height: auto;
 }
 
-section {
+#image section {
 	width: 100%;
 	margin: auto;
 	text-align: center;
 }
 
-section {
+#image section {
 	display: none;
 }
 
@@ -32,47 +32,81 @@ img {
 	max-width: 100%;
 }
 
+.text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+}
+
+.image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* grid positions */
+#responsive main {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(15em, 1fr));
+}
+
+#mobile main {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#tablet main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#desktop main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 /* < 20em view */
 @media (max-width: 319px) {
- 	#small {
+ 	#image #small {
     	display: block;
     	background-color: #EEE;
   	}
 
-  	#small img {
+  	#image #small img {
   		width: 100%;
   	}
 }
 
 /* Mobile view - 20em */
 @media (min-width: 320px) and (max-width: 639px) {
- 	#mobile {
+ 	#image #mobile {
     	display: block;
   	}
 
-  	#mobile img {
+  	#image #mobile img {
   		min-width: 320px;
   	}
 }
 
 /* Tablet view 40em */
 @media (min-width: 640px) and (max-width: 1279px) {
- 	#tablet {
+ 	#image #tablet {
     	display: block;
 	}
 
-  	#tablet img {
+  	#image #tablet img {
   		min-width: 640px;
   	}
 }
 
 /* Desktop view  80em */
 @media (min-width: 1280px) {
- 	#desktop {
+ 	#image #desktop {
     	display: block;
 	}
 
-  	#desktop img {
+  	#image #desktop img {
   		min-width: 1280px;
   	}
 }
