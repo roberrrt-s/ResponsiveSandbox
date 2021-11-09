@@ -11,6 +11,7 @@ body {
 	margin: 0;
 	height: auto;
 	overflow: auto;
+	font-family: sans-serif;
 }
 
 main {
@@ -34,9 +35,19 @@ img {
 
 .text {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	flex-flow: column nowrap;
 	padding: 1em;
+	text-align: left;
+}
+
+h1,
+h3 {
+	margin-top: 0;
+}
+
+h3 {
+	margin-bottom: .25em;
 }
 
 .image {
@@ -48,7 +59,7 @@ img {
 /* grid positions */
 #responsive main {
 	display: grid;
-	grid-template-columns: repeat( auto-fit, minmax(15em, 1fr));
+	grid-template-columns: repeat( auto-fit, minmax(20em, 1fr));
 }
 
 #mobile main {
