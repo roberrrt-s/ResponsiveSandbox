@@ -1,0 +1,83 @@
+:root {
+	--border-color: #AAA;
+	--bg-color: #EEE;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+}
+
+main section {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(20em, 1fr));
+	border: 5px dashed var(--border-color);
+	background-color: var(--bg-color);
+	width: 100%;
+	height: 5em;
+	margin-bottom: 5px;
+}
+
+#menu {
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	background: white;
+	padding: 1em;
+}
+
+#menu article {
+	cursor: move;
+	width: 2.5em;
+	height: 2.5em;
+}
+
+#menu article button {
+	display: none;
+}
+
+main article {
+	position: relative;
+}
+
+main article button {
+	display: none;
+	position: absolute;
+	top: .25em;
+	right: .25em;
+}
+
+main article:hover button,
+main article button:hover,
+main article:active button,
+main article button:active,
+main article:focus button,
+main article button:focus  {
+	display: inline-block;
+}
+
+.red {
+	background: red;
+}
+
+.green {
+	background: green;
+}
+
+.blue {
+	background: blue;
+}
+
+.yellow {
+	background: yellow;
+}
