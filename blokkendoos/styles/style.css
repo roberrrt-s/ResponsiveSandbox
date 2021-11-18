@@ -36,12 +36,12 @@ main {
 	height: 100%;
 }
 
-.is-responsive main section {
+.is-row main section {
 	display: grid;
 }
 
 main section {
-	grid-template-columns: repeat( auto-fit, minmax(15em, 1fr));
+	grid-template-columns: repeat( auto-fit, minmax(0, 1fr));
 	grid-auto-flow: dense;
 	grid-gap: .5em;
 	border: 5px dashed var(--border-color);
@@ -60,6 +60,7 @@ main section {
 	right: 1em;
 	background: var(--bg-color);
 	padding: 1em;
+	border: 1px solid black;
 }
 
 
@@ -69,6 +70,7 @@ main section {
 	left: 1em;
 	background: var(--bg-color);
 	padding: 1em;
+	border: 1px solid black;
 }
 
 
@@ -141,7 +143,7 @@ main article button:focus  {
 	flex-flow: column nowrap;
 }
 
-.is-responsive footer ul {
+.is-row footer ul {
 	flex-flow: row wrap;
 }
 

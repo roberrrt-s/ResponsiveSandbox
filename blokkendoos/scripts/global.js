@@ -55,14 +55,18 @@ function createNewSection() {
 	document.querySelector('main').appendChild(section)
 }
 
-function changeLayout() {
-	document.body.classList.toggle('is-responsive');
+function changeLayout(e) {
+	if(e.currentTarget.id === 'magic') {
+		document.body.classList.add('is-row');
+	} else {
+		document.body.classList.remove('is-row');
+	}
 }
 
 function init() {
 	let articles = document.querySelectorAll('#menu article');
 	let sections = document.querySelectorAll('main section');
-	let switcher = document.querySelector('#switcher button');
+	let switchers = document.querySelectorAll('#switcher button');
 
 	articles.forEach(article => {
 		article.addEventListener('dragstart', dragStart)
@@ -74,7 +78,9 @@ function init() {
 		section.addEventListener('drop', dragDrop)
 	})
 
-	switcher.addEventListener('click', changeLayout)
+	switchers.forEach(switcher => {
+		switcher.addEventListener('click', changeLayout)
+	});
 }
 
 init();
