@@ -56,10 +56,15 @@ function createNewSection() {
 }
 
 function changeLayout(e) {
-	if(e.currentTarget.id === 'magic') {
+	if(e.currentTarget.id === 'vertical') {
+		document.body.classList.remove('is-row');
+		document.body.classList.remove('is-magic');
+	} else if(e.currentTarget.id === 'horizontal') {
 		document.body.classList.add('is-row');
+		document.body.classList.remove('is-magic');
 	} else {
 		document.body.classList.remove('is-row');
+		document.body.classList.add('is-magic');
 	}
 }
 
