@@ -42,7 +42,7 @@ main {
 
 .is-magic main section {
 	display: grid;
-	grid-template-columns: repeat( auto-fit, minmax(20em, 1fr));
+	grid-template-columns: repeat( auto-fit, minmax(20em, 40em));
 }
 
 main section {
