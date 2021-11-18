@@ -46,8 +46,6 @@ function removeNode(e) {
 function createNewSection() {
 	const section = document.createElement('section')
 
-	console.log(section);
-
 	section.classList.add('drag-target')
 
 	section.addEventListener('dragleave', dragLeave)
@@ -57,9 +55,14 @@ function createNewSection() {
 	document.querySelector('main').appendChild(section)
 }
 
+function changeLayout() {
+	document.body.classList.toggle('is-responsive');
+}
+
 function init() {
 	let articles = document.querySelectorAll('#menu article');
 	let sections = document.querySelectorAll('main section');
+	let switcher = document.querySelector('#switcher button');
 
 	articles.forEach(article => {
 		article.addEventListener('dragstart', dragStart)
@@ -70,6 +73,8 @@ function init() {
 		section.addEventListener('dragover', dragOver)
 		section.addEventListener('drop', dragDrop)
 	})
+
+	switcher.addEventListener('click', changeLayout)
 }
 
 init();

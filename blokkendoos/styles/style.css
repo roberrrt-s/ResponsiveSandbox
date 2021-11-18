@@ -36,8 +36,11 @@ main {
 	height: 100%;
 }
 
-main section {
+.is-responsive main section {
 	display: grid;
+}
+
+main section {
 	grid-template-columns: repeat( auto-fit, minmax(15em, 1fr));
 	grid-auto-flow: dense;
 	grid-gap: .5em;
@@ -58,6 +61,16 @@ main section {
 	background: var(--bg-color);
 	padding: 1em;
 }
+
+
+#switcher {
+	position: fixed;
+	bottom: 1em;
+	left: 1em;
+	background: var(--bg-color);
+	padding: 1em;
+}
+
 
 #menu article {
 	display: flex;
