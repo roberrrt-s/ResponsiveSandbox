@@ -47,7 +47,7 @@ main section {
 	border: 5px dashed var(--border-color);
 	background-color: var(--bg-color);
 	width: 100%;
-	min-height: 2.5em;
+	min-height: 4em;
 	margin-bottom: .25em;
 	padding-left: .25em;
 	padding-right: .25em;
