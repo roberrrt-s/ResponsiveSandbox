@@ -135,6 +135,19 @@ main article button:focus  {
 	padding: 2em;
 }
 
+.footer ul {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.is-responsive footer ul {
+	flex-flow: row wrap;
+}
+
+.footer li {
+	list-style: none;
+}
+
 nav {
 	display: flex;
 	flex-flow: row nowrap;
