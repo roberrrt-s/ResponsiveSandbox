@@ -94,7 +94,8 @@ main section {
 	display: none;
 }
 
-main article {
+main article,
+main ul {
 	position: relative;
 	background: var(--subtle-bg-color);
 }
@@ -146,6 +147,27 @@ main article button:focus  {
 
 .footer li {
 	list-style: none;
+}
+
+.footer ul {
+	margin: 0;
+	padding: 1em;
+}
+
+.cta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cta a {
+	background: rebeccapurple;
+	color: white;
+	border-radius: 3px;
+	padding: .5em 1em;
+	text-decoration: none;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 nav {
